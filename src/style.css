@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to top, rgba(245, 171, 64, 0.8), rgba(245, 235, 64, 0.22));
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.text {
+    font-family: 'Indie Flower', cursive;   
+    float: right;
+    width: 50%
+}
+
+.heading {
+    font-family: 'Erica One', cursive;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: 'Erica One', cursive;
+    font-size: 40px;
+    margin-top: -75px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 20px solid;
+}
+
+.headerimage {
+    max-height: 250px;
+    margin-left: 10px;
+    
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
