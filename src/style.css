@@ -1,14 +1,20 @@
 body {
-    background: linear-gradient(to top, rgba(245, 171, 64, 0.8), rgba(245, 235, 64, 0.22));
+    background: #BBEC8F;
     height: 100%;
     background-attachment: fixed;
+    font-family: 'Indie Flower', cursive;
+    color: #159C00;
 }
 
-.text {
-    font-family: 'Indie Flower', cursive;   
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* .text {   
     float: right;
     width: 50%
-}
+} */
 
 .heading {
     font-family: 'Erica One', cursive;
@@ -23,21 +29,62 @@ body {
 }
 
 .flex-container {
+    background: #82E629;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 20px solid;
+    border-bottom: 20px solid #159C00;
 }
 
 .headerimage {
     max-height: 250px;
-    margin-left: 10px;
-    
+    margin-left: 10px;    
 }
 
 .header-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.port-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+.port-img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+    position: relative;
+    width: 50%;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute; 
+    top: 50%;
+    
+    background-color: #159C00;
+    color: #DCE9D1;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.port-img:hover {
+    opacity: 0.5;
+}
+
+.port-img:hover .middle {
+    opacity: 1;
+}
+
+/* .hovertext {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
