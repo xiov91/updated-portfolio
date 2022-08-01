@@ -12,11 +12,8 @@ img {
     max-height: 100%;
 }
 
- .list-container {
-    column-count: 2;
- }
- .list-container ul {
-    list-style: circle;
+ .list-container li {
+    bottom-margin: 5px;
  }
  
 .text-container {
@@ -29,6 +26,10 @@ img {
     width: 600px;
     text-align: justify;
     margin: -10px;
+}
+
+.header-container a {
+    text-decoration: none;
 }
 
 .heading {
@@ -147,3 +148,81 @@ a:link {
   a:active {
     color: #118000;
   }
+
+  /* From Button */
+
+  button {
+    margin: 50px;
+    font-family: inherit;
+  }
+
+  .fill {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(188, 237, 136, 1);
+  }
+  
+  .fill::after {
+    background-color: #ffe54c;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .fill:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
+  /* From the Cards */
+
+  .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10px;
+  }
+
+  .horizontal {
+    max-width: 400px;
+  }
+
+.container {
+    padding-top: 60px;
+}
+.list-group {
+    position: relative;
+    display: block;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.list-group h4 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 6px; 
+    margin-bottom: 10px;
+}
+
+.list-group p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.list-group-item {
+    display: block;
+    padding: 10px 25px 10px 15px;
+    border: 1px solid rgba(221, 221, 221, 0.25);
+}
